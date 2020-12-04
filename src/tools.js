@@ -20,10 +20,18 @@ var getMenu = function () {
         html  += ' <li>';
 
 
-        html  += '<a href="'+topVal.url +'" target="main">'
+        if(topVal.url.length>1){
+            html  += '<a href="'+ topVal.url +'" target="main">'
+        }else{
+            html  += '<a href="javascript:;">'
+        }
+
         html  += '<i class="iconfont mr-1">'+topVal.icon+'</i>'
         html  += topVal.name
-        html  += '<i class="iconfont jt float-right">&#xe66c;</i>'
+        if(topVal.list.length>0){
+            html  += '<i class="iconfont jt float-right">&#xe66c;</i>'
+        }
+
         html  += '</a>'
         if(topVal.list.length>0){
             for( subVal of topVal.list){

@@ -25,7 +25,7 @@
             <h4>BsAdmin</h4>
         </div>
         <ul class="menu">
-             <li><a href="index.html" target="main"><i class="iconfont mr-1">&#xe6a2;</i>首页<i class="iconfont jt float-right">&#xe66c;</i></a> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe6e0;</i>用户管理<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="user_index.html" target="main">用户列表</a></li></ul><ul class="sub-menu"><li><a href="user_add.html" target="main">添加用户</a></li></ul> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe69d;</i>文章管理<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="type_index.html" target="main">栏目管理</a></li></ul><ul class="sub-menu"><li><a href="article_index.html" target="main">文章管理</a></li></ul> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe6d4;</i>系统设置<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="web_index.html" target="main">网站设置</a></li></ul><ul class="sub-menu"><li><a href="flink_index.html" target="main">友情连接</a></li></ul><ul class="sub-menu"><li><a href="nav_index.html" target="main">导航管理</a></li></ul><ul class="sub-menu"><li><a href="web_pwd.html" target="main">修改密码</a></li></ul><ul class="sub-menu"><li><a href="web_cache.html" target="main">清除缓存</a></li></ul><ul class="sub-menu"><li><a href="login.html" target="main">登录页</a></li></ul> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe6ad;</i>数据库<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="db_backup.html" target="main">备份数据库</a></li></ul><ul class="sub-menu"><li><a href="db_reduction.html" target="main">还原数据库</a></li></ul> </li> <li><a href="out.html" target="main"><i class="iconfont mr-1">&#xe68c;</i>退出登录<i class="iconfont jt float-right">&#xe66c;</i></a> </li> <li><a href="http://www.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe690;</i>开发者官网<i class="iconfont jt float-right">&#xe66c;</i></a> </li> <li><a href="http://docs.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe699;</i>开发文档<i class="iconfont jt float-right">&#xe66c;</i></a> </li>
+             <li><a href="index.html" target="main"><i class="iconfont mr-1">&#xe6a2;</i>首页<i class="iconfont jt float-right">&#xe66c;</i></a> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe6e0;</i>用户管理<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="user_index.html" target="main">用户列表</a></li></ul><ul class="sub-menu"><li><a href="user_create.html" target="main">添加用户</a></li></ul> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe69d;</i>文章管理<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="type_index.html" target="main">栏目管理</a></li></ul><ul class="sub-menu"><li><a href="article_index.html" target="main">文章管理</a></li></ul> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe6d4;</i>系统设置<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="web_index.html" target="main">网站设置</a></li></ul><ul class="sub-menu"><li><a href="flink_index.html" target="main">友情连接</a></li></ul><ul class="sub-menu"><li><a href="nav_index.html" target="main">导航管理</a></li></ul><ul class="sub-menu"><li><a href="web_pwd.html" target="main">修改密码</a></li></ul><ul class="sub-menu"><li><a href="web_cache.html" target="main">清除缓存</a></li></ul><ul class="sub-menu"><li><a href="login.html" target="main">登录页</a></li></ul> </li> <li><a href="" target="main"><i class="iconfont mr-1">&#xe6ad;</i>数据库<i class="iconfont jt float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="db_backup.html" target="main">备份数据库</a></li></ul><ul class="sub-menu"><li><a href="db_reduction.html" target="main">还原数据库</a></li></ul> </li> <li><a href="out.html" target="main"><i class="iconfont mr-1">&#xe68c;</i>退出登录<i class="iconfont jt float-right">&#xe66c;</i></a> </li> <li><a href="http://www.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe690;</i>开发者官网<i class="iconfont jt float-right">&#xe66c;</i></a> </li> <li><a href="http://docs.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe699;</i>开发文档<i class="iconfont jt float-right">&#xe66c;</i></a> </li>
         </ul>
     </nav>
 
@@ -56,15 +56,15 @@
 <main>
     <div class="main">
         <div class="search">
-            <form class="form-inline float-left" action="{{url('/admin/user')}}" method="get">
+            <form class="form-inline float-left" action="" method="get">
                 <div class="form-group">
-                    <input type="text" name="key" value="{{$key}}" class="form-control" placeholder="手机号/昵称/UID">
+                    <input type="text" name="key" value="" class="form-control" placeholder="手机号/昵称/UID">
                 </div>
-                <button type="submit" class="btn btn-primary"><i class="iconfont"></i>搜索</button>
+                <button type="submit" class="btn btn-primary"><i class="iconfont"></i>搜索</button>
             </form>
 
 
-            <a class="btn btn-primary float-right" href="{{url('/admin/user/create')}}"><i class="iconfont"></i>新增</a>
+            <a class="btn btn-primary float-right" href="user_create.html"><i class="iconfont"></i>新增</a>
         </div>
 
         <div class="table-box">
@@ -97,10 +97,266 @@
                         <td>2020-10-10</td>
                         <td>2020-12-32</td>
                         <td>
-                            <a href="{{url('/admin/user/edit/'.$val->uid)}}">修改</a>
-                            <a href="{{url('/admin/user/edit/'.$val->uid)}}">删除</a>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
                         </td>
                     </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
+                        <td>
+                            434
+                        </td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
+                        <td>
+                            <a href="user_edit.html">修改</a>
+                            <a class="del" href="user_del.html">删除</a>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
@@ -108,11 +364,11 @@
         <div class="page">
             <span class="total float-left page-link">共23223条</span>
             <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">&lt;&lt;</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                <li class="page-item"><a class="page-link" href="#">&gt;&gt;</a></li>
             </ul>
         </div>
     </div>

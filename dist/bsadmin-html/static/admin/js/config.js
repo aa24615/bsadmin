@@ -15,7 +15,7 @@ const menu = [{
         "url": "user_index.html"
     }, {
         "name": "添加用户",
-        "url": "user_add.html"
+        "url": "user_create.html"
     }]
 }, {
     "name": "文章管理",
