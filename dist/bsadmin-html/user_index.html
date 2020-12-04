@@ -70,12 +70,7 @@
         <div class="table-box">
 
 
-            
-
-                @foreach($list as $val)
-                    
-                @endforeach
-                <table class="table">
+            <table class="table">
                 <thead>
                 <tr>
                     <th scope="col">UID</th>
@@ -88,29 +83,37 @@
                     <th scope="col">操作</th>
                 </tr>
                 </thead>
-                <tbody><tr>
-                        <th scope="row">{{$val-&gt;uid}}</th>
-                        <td>{{$val-&gt;phone}}</td>
-                        <td>{{$val-&gt;name}}</td>
+                <tbody>
+
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
                         <td>
-                            <a href="jvascript:;" data-toggle="modal" data-target="#exampleModal" data-whatever="{{$val->uid}}">
-                                {{$val-&gt;score}}
-                            </a>
+                            434
                         </td>
-                        <td>{{$val-&gt;login}}</td>
-                        <td>{{date('Y-m-d H:s',$val-&gt;rge_time)}}</td>
-                        <td>{{date('Y-m-d H:s',$val-&gt;login_time)}}</td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
                         <td>
                             <a href="{{url('/admin/user/edit/'.$val->uid)}}">修改</a>
-                            <a href="{{url('/admin/user/del/'.$val->uid)}}">冻结</a>
+                            <a href="{{url('/admin/user/edit/'.$val->uid)}}">删除</a>
                         </td>
-                    </tr></tbody>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
         <div class="page">
-            <span class="total float-left page-link">共{{$list-&gt;total()}}条</span>
-            {{$list-&gt;links()}}
+            <span class="total float-left page-link">共23223条</span>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
         </div>
     </div>
 </main>
@@ -162,6 +165,7 @@
         console.log(modal);
     })
 </script>
+
 
 
 
