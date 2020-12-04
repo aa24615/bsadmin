@@ -45,6 +45,9 @@ body {
 .menu li a .jt {
   transform: rotate(90deg);
 }
+.menu li a .an {
+  transform: rotate(0deg) !important;
+}
 .menu li a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   border-left: 4px solid #007bff;

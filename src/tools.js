@@ -23,7 +23,7 @@ var getMenu = function () {
         if(topVal.url.length>1){
             html  += '<a href="'+ topVal.url +'" target="main">'
         }else{
-            html  += '<a href="javascript:;">'
+            html  += '<a class="top-menu" href="javascript:;">'
         }
 
         html  += '<i class="iconfont mr-1">'+topVal.icon+'</i>'
@@ -34,13 +34,15 @@ var getMenu = function () {
 
         html  += '</a>'
         if(topVal.list.length>0){
+            html  += '<ul class="sub-menu">'
             for( subVal of topVal.list){
-                html  += '<ul class="sub-menu">'
+
                 html  += '<li>'
                 html  += '<a href="'+subVal.url+'" target="main">'+subVal.name+'</a>'
                 html  += '</li>'
-                html  += '</ul>'
+
             }
+            html  += '</ul>'
         }
 
         html  += ' </li>';

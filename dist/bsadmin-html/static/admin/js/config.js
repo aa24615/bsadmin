@@ -8,7 +8,7 @@ const menu = [{
 , {
     "name": "用户管理",
     "icon": "&#xe6e0;",
-    "url": "",
+    "url": "#",
     "hidden": false,
     "list": [{
         "name": "用户列表",
@@ -20,7 +20,7 @@ const menu = [{
 }, {
     "name": "文章管理",
     "icon": "&#xe69d;",
-    "url": "",
+    "url": "#",
     "hidden": false,
     "list": [{
         "name": "栏目管理",
@@ -32,7 +32,7 @@ const menu = [{
 }, {
     "name": "系统设置",
     "icon": "&#xe6d4;",
-    "url": "",
+    "url": "#",
     "hidden": false,
     "list": [{
         "name": "网站设置",
@@ -56,7 +56,7 @@ const menu = [{
 }, {
     "name": "数据库",
     "icon": "&#xe6ad;",
-    "url": "",
+    "url": "#",
     "hidden": false,
     "list": [{
         "name": "备份数据库",
