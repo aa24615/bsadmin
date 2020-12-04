@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <meta name="csrf-token" content="{{csrf_token()}}">
+    <link rel="icon" href="/static/favicon.ico">
+
+    <link rel="stylesheet" href="/static/bootstrap4/css/bootstrap.min.css" >
+
+    <link  rel="stylesheet/less" type="text/css" href="/static/admin/css/main.less" >
+
+    <script src="/static/js/less.js" ></script>
+    <script src="/static/js/jquery-3.4.1.min.js" ></script>
+    <script src="/static/bootstrap4/js/bootstrap.min.js" ></script>
+
+</head>
+<body>
+
+<main>
+    <div class="main">
+        <div class="search">
+            <form class="form-inline float-left" action="{{url('/admin/user')}}" method="get">
+                <div class="form-group">
+                    <input type="text" name="key" value="{{$key}}" class="form-control" placeholder="手机号/昵称/UID">
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="iconfont">&#xe8ef;</i>搜索</button>
+            </form>
+
+
+            <a class="btn btn-primary float-right" href="{{url('/admin/user/create')}}"><i class="iconfont">&#xe665;</i>新增</a>
+        </div>
+
+        <div class="table-box">
+
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">UID</th>
+                    <th scope="col">手机</th>
+                    <th scope="col">呢称</th>
+                    <th scope="col">积分</th>
+                    <th scope="col">登录次数</th>
+                    <th scope="col">注册时间</th>
+                    <th scope="col">最后登录</th>
+                    <th scope="col">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                @foreach($list as $val)
+                    <tr>
+                        <th scope="row">{{$val->uid}}</th>
+                        <td>{{$val->phone}}</td>
+                        <td>{{$val->name}}</td>
+                        <td>
+                            <a href="jvascript:;" data-toggle="modal" data-target="#exampleModal" data-whatever="{{$val->uid}}">
+                                {{$val->score}}
+                            </a>
+                        </td>
+                        <td>{{$val->login}}</td>
+                        <td>{{date('Y-m-d H:s',$val->rge_time)}}</td>
+                        <td>{{date('Y-m-d H:s',$val->login_time)}}</td>
+                        <td>
+                            <a href="{{url('/admin/user/edit/'.$val->uid)}}">修改</a>
+                            <a href="{{url('/admin/user/del/'.$val->uid)}}">冻结</a>
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page">
+            <span class="total float-left page-link">共{{$list->total()}}条</span>
+            {{$list->links()}}
+        </div>
+    </div>
+</main>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">积分充值</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">充值数量</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">备注信息</label>
+                        <textarea class="form-control" placeholder="如:补充值~" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">确定提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        console.log(event);
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+
+
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-body input').val(recipient)
+
+        modal.find('.btn-primary').click(function (e) {
+            console.log('点击')
+        })
+        console.log(modal);
+    })
+</script>
+
+</body>
+</html>

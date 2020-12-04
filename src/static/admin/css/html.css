@@ -1,0 +1,9 @@
+#body {
+  padding: 20px;
+  background-color: #eaeaea;
+  height: 100%;
+}
+#body > * {
+  background-color: #fff;
+  height: 100%;
+}
