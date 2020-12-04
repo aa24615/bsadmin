@@ -53,32 +53,35 @@
                 </thead>
                 <tbody>
 
-                @foreach($list as $val)
+
                     <tr>
-                        <th scope="row">{{$val->uid}}</th>
-                        <td>{{$val->phone}}</td>
-                        <td>{{$val->name}}</td>
+                        <th scope="row">1</th>
+                        <td>159111111234</td>
+                        <td>BsAdmin</td>
                         <td>
-                            <a href="jvascript:;" data-toggle="modal" data-target="#exampleModal" data-whatever="{{$val->uid}}">
-                                {{$val->score}}
-                            </a>
+                            434
                         </td>
-                        <td>{{$val->login}}</td>
-                        <td>{{date('Y-m-d H:s',$val->rge_time)}}</td>
-                        <td>{{date('Y-m-d H:s',$val->login_time)}}</td>
+                        <td>2323</td>
+                        <td>2020-10-10</td>
+                        <td>2020-12-32</td>
                         <td>
                             <a href="{{url('/admin/user/edit/'.$val->uid)}}">修改</a>
-                            <a href="{{url('/admin/user/del/'.$val->uid)}}">冻结</a>
+                            <a href="{{url('/admin/user/edit/'.$val->uid)}}">删除</a>
                         </td>
                     </tr>
-                @endforeach
                 </tbody>
             </table>
         </div>
 
         <div class="page">
-            <span class="total float-left page-link">共{{$list->total()}}条</span>
-            {{$list->links()}}
+            <span class="total float-left page-link">共23223条</span>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
         </div>
     </div>
 </main>
