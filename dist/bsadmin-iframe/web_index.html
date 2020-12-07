@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>网站配置 - QAdmin后台模板 - BsAdmin后台模板 - iframe版演示</title>
+    <title>网站配置 - BsAdmin后台模板 - iframe版演示</title>
     <link rel="icon" href="./static/favicon.ico">
     <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
     <link rel="stylesheet" href="./static/admin/css/main.css" >
@@ -19,73 +19,73 @@
 
 <body>
 
-<fieldset class="layui-elem-field layui-field-title">
-    <legend>网站配置</legend>
-</fieldset>
-<form class="layui-form " action="">
-    <div class="layui-form-item">
-        <label class="layui-form-label">网站名称</label>
-        <div class="layui-input-block">
-            <input type="text" name="name" value="QAdmin轻量级后台模板" placeholder="" class="layui-input">
-        </div>
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label">网站标题</label>
-        <div class="layui-input-block">
-            <input type="text" name="title" value="程序员的专用博客" placeholder="" class="layui-input">
-        </div>
-    </div>
 
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">关键词</label>
-        <div class="layui-input-block">
-            <input type="text" name="keywords" value="程序员博客,vue博客,tp5博客" placeholder="" class="layui-input">
-        </div>
-    </div>
+<main>
+    <div class="main">
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">网站描述</label>
-        <div class="layui-input-block">
-            <textarea name="description" placeholder="" class="layui-textarea">专为程序员订制的博客系统</textarea>
+        <div class="title-box">
+            <h5>网站配置</h5>
         </div>
-    </div>
+        <div class="form-box">
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">版版所有</label>
-        <div class="layui-input-block">
-            <input type="text" name="powerby" value="Copyright © 2017-2018 IYCMS. 博客管理系统 版权所有" placeholder="" class="layui-input">
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-5">
+                    <form class=" " action="">
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">备案号</label>
-        <div class="layui-input-block">
-            <input type="text" name="beian" value="赣ICP备16032092号" placeholder="" class="layui-input">
-        </div>
-    </div>
+                        <div class="form-group">
+                            <label>网站名称</label>
+                            <input type="text" name="phone" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">是否闭站</label>
-        <div class="layui-input-block">
-            <input type="checkbox" value="1" name="state" lay-text="是|否" lay-skin="switch">
-        </div>
-    </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">闭站提示</label>
-        <div class="layui-input-block">
-            <textarea name="state_desc" placeholder="" class="layui-textarea">服务器正在打瞌睡!</textarea>
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <div class="layui-input-block">
-            <button class="layui-btn" lay-submit="" lay-filter="submit">立即提交</button>
+                        <div class="form-group">
+                            <label>网站标题</label>
+                            <input type="text" name="phone" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
 
+
+                        <div class="form-group">
+                            <label>关键词</label>
+                            <input type="text" name="phone" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>网站描述</label>
+                            <textarea type="text" name="phone" class="form-control" rows="5"></textarea>
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>版版所有</label>
+                            <input type="text" name="phone" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>备案号</label>
+                            <input type="text" name="phone" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit-box">
+            <button type="submit" class="btn btn-primary">确定提交</button>
+            <button type="button" onclick="window.location.blink()" class="btn btn-outline-secondary">取消</button>
         </div>
     </div>
-</form>
+</main>
 
 
 </body>
