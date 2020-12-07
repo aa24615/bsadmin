@@ -1,5 +1,24 @@
-<title>添加菜单 - QAdmin后台模板</title>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加菜单 - QAdmin后台模板 - BsAdmin后台模板 - iframe版演示</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <link rel="stylesheet" href="./static/admin/css/theme-default.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+</head>
+
 <body>
+
 
 <fieldset class="layui-elem-field layui-field-title">
     <legend>添加导航</legend>
@@ -10,8 +29,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">导航名称</label>
         <div class="layui-input-block">
-            <input type="text" name="name" required lay-verify="required" placeholder="" autocomplete="off"
-                   class="layui-input">
+            <input type="text" name="name" required="" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
@@ -39,27 +57,30 @@
     <div class="layui-form-item">
         <label class="layui-form-label">是否连接</label>
         <div class="layui-input-block">
-            <input type="checkbox" name="url_state" value="1" checked lay-text="开启|关闭" lay-skin="switch">
+            <input type="checkbox" name="url_state" value="1" checked="" lay-text="开启|关闭" lay-skin="switch">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">连接地址</label>
         <div class="layui-input-block">
-            <input type="text" name="url" placeholder="外部连接请填写http// 本站连接请填写模块名/控制器/方法名" autocomplete="off"
-                   class="layui-input">
+            <input type="text" name="url" placeholder="外部连接请填写http// 本站连接请填写模块名/控制器/方法名" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">是否显示</label>
         <div class="layui-input-block">
-            <input type="checkbox" value="1" name="state" lay-text="开启|关闭" checked lay-skin="switch">
+            <input type="checkbox" value="1" name="state" lay-text="开启|关闭" checked="" lay-skin="switch">
         </div>
     </div>
     <div class="layui-form-item">
         <div class="layui-input-block">
-            <button class="layui-btn" lay-submit lay-filter="submit">立即提交</button>
+            <button class="layui-btn" lay-submit="" lay-filter="submit">立即提交</button>
 
         </div>
     </div>
 </form>
+
+
 </body>
+
+</html>
