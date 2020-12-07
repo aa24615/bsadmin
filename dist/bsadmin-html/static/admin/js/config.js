@@ -83,34 +83,6 @@ const menu = [{
         "url": "http://docs.qadmin.net/",
         "target": "_blank",
         "list": []
-    }, {
-        "name": "一级菜单",
-        "icon": "&#xe699;",
-        "url": "#",
-        "target": "_blank",
-        "list": [ {
-            "name": "二级菜单",
-            "url": "#"
-        },{
-            "name": "二级菜单",
-            "url": "#"
-        },{
-            "name": "二级菜单",
-            "url": "#"
-        },{
-            "name": "二级菜单",
-            "url": "#"
-        },{
-            "name": "二级菜单",
-            "url": "#"
-        },{
-            "name": "二级菜单",
-            "url": "#"
-        },{
-            "name": "二级菜单",
-            "url": "#"
-        },
-        ]
     }
     ];
 
