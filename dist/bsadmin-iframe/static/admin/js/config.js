@@ -1,35 +1,11 @@
 const menu = [{
     "name": "首页",
     "icon": "&#xe6a2;",
-    "url": "index.html",
+    "url": "main.html",
     "hidden": false,
     "list": []
     },
     {
-        "name": "用户管理",
-        "icon": "&#xe6e0;",
-        "url": "#",
-        "hidden": false,
-        "list": [{
-            "name": "用户列表",
-            "url": "user_index.html"
-        }, {
-            "name": "添加用户",
-            "url": "user_create.html"
-        }]
-    }, {
-        "name": "用户管理",
-        "icon": "&#xe6e0;",
-        "url": "#",
-        "hidden": false,
-        "list": [{
-            "name": "用户列表",
-            "url": "user_index.html"
-        }, {
-            "name": "添加用户",
-            "url": "user_create.html"
-        }]
-    }, {
         "name": "用户管理",
         "icon": "&#xe6e0;",
         "url": "#",
@@ -107,7 +83,36 @@ const menu = [{
         "url": "http://docs.qadmin.net/",
         "target": "_blank",
         "list": []
-    }];
+    }, {
+        "name": "一级菜单",
+        "icon": "&#xe699;",
+        "url": "#",
+        "target": "_blank",
+        "list": [ {
+            "name": "二级菜单",
+            "url": "#"
+        },{
+            "name": "二级菜单",
+            "url": "#"
+        },{
+            "name": "二级菜单",
+            "url": "#"
+        },{
+            "name": "二级菜单",
+            "url": "#"
+        },{
+            "name": "二级菜单",
+            "url": "#"
+        },{
+            "name": "二级菜单",
+            "url": "#"
+        },{
+            "name": "二级菜单",
+            "url": "#"
+        },
+        ]
+    }
+    ];
 
 const config = {
     name: "BsAdmin",
