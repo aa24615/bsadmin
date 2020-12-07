@@ -48,9 +48,6 @@ const menu = [{
             "name": "修改密码",
             "url": "web_pwd.html"
         }, {
-            "name": "清除缓存",
-            "url": "web_cache.html"
-        }, {
             "name": "登录页",
             "url": "login.html"
         }]

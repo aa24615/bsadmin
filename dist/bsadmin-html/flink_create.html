@@ -26,7 +26,7 @@
             <h4>BsAdmin</h4>
         </div>
         <ul class="menu">
-             <li><a href="main.html" target="main"><i class="iconfont mr-1">&#xe6a2;</i>首页</a> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe6e0;</i>用户管理<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="user_index.html" target="main">用户列表</a></li><li><a href="user_create.html" target="main">添加用户</a></li></ul> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe69d;</i>文章管理<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="type_index.html" target="main">栏目管理</a></li><li><a href="article_index.html" target="main">文章管理</a></li></ul> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe6d4;</i>系统设置<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="web_index.html" target="main">网站设置</a></li><li><a href="flink_index.html" target="main">友情连接</a></li><li><a href="nav_index.html" target="main">导航管理</a></li><li><a href="web_pwd.html" target="main">修改密码</a></li><li><a href="web_cache.html" target="main">清除缓存</a></li><li><a href="login.html" target="main">登录页</a></li></ul> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe6ad;</i>数据库<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="db_backup.html" target="main">备份数据库</a></li><li><a href="db_reduction.html" target="main">还原数据库</a></li></ul> </li> <li><a href="out.html" target="main"><i class="iconfont mr-1">&#xe68c;</i>退出登录</a> </li> <li><a href="http://www.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe690;</i>开发者官网</a> </li> <li><a href="http://docs.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe699;</i>开发文档</a> </li>
+             <li><a href="main.html" target="main"><i class="iconfont mr-1">&#xe6a2;</i>首页</a> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe6e0;</i>用户管理<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="user_index.html" target="main">用户列表</a></li><li><a href="user_create.html" target="main">添加用户</a></li></ul> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe69d;</i>文章管理<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="type_index.html" target="main">栏目管理</a></li><li><a href="article_index.html" target="main">文章管理</a></li></ul> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe6d4;</i>系统设置<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="web_index.html" target="main">网站设置</a></li><li><a href="flink_index.html" target="main">友情连接</a></li><li><a href="nav_index.html" target="main">导航管理</a></li><li><a href="web_pwd.html" target="main">修改密码</a></li><li><a href="login.html" target="main">登录页</a></li></ul> </li> <li><a class="top-menu" href="javascript:;"><i class="iconfont mr-1">&#xe6ad;</i>数据库<i class="iconfont arrow float-right">&#xe66c;</i></a><ul class="sub-menu"><li><a href="db_backup.html" target="main">备份数据库</a></li><li><a href="db_reduction.html" target="main">还原数据库</a></li></ul> </li> <li><a href="out.html" target="main"><i class="iconfont mr-1">&#xe68c;</i>退出登录</a> </li> <li><a href="http://www.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe690;</i>开发者官网</a> </li> <li><a href="http://docs.qadmin.net/" target="main"><i class="iconfont mr-1">&#xe699;</i>开发文档</a> </li>
         </ul>
     </nav>
 
@@ -55,65 +55,69 @@
             
 
 
-<fieldset class="layui-elem-field layui-field-title">
-    <legend>添加友情</legend>
-</fieldset>
-<form class="layui-form " action="">
-    <div class="layui-form-item">
-        <label class="layui-form-label">友情排序</label>
-        <div class="layui-input-inline">
-            <input type="text" name="sort" value="21" placeholder="" autocomplete="off" class="layui-input">
-        </div>
-    </div>
+<main>
+    <div class="main">
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">友情名称</label>
-        <div class="layui-input-block">
-            <input type="text" name="name" placeholder="" autocomplete="off" class="layui-input">
+        <div class="title-box">
+            <h5>添加友情链接</h5>
         </div>
-    </div>
+        <div class="form-box">
 
+            <div class="row">
+                <div class="col-5">
+                    <form class="layui-form " action="">
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">连接地址</label>
-        <div class="layui-input-block">
-            <input type="text" name="url" placeholder="" autocomplete="off" class="layui-input">
-        </div>
-    </div>
+                        <div class="form-group">
+                            <label>友链排序</label>
+                            <input type="text" name="phone" class="form-control" placeholder="">
+                            <small class="form-text text-muted"></small>
+                        </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">描述</label>
-        <div class="layui-input-block">
-            <input type="text" name="title" placeholder="" autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">联系人</label>
-        <div class="layui-input-block">
-            <input type="text" name="user" placeholder="" autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">联系QQ</label>
-        <div class="layui-input-block">
-            <input type="text" name="qq" placeholder="" autocomplete="off" class="layui-input">
-        </div>
-    </div>
+                        <div class="form-group">
+                            <label>友链名称</label>
+                            <input type="text" name="phone" class="form-control" placeholder="">
+                            <small class="form-text text-muted"></small>
+                        </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">是否显示</label>
-        <div class="layui-input-block">
-            <input type="checkbox" value="1" name="state" lay-text="开启|关闭" checked="" lay-skin="switch">
+                        <div class="form-group">
+                            <label>连接地址</label>
+                            <input type="text" name="phone" class="form-control" placeholder="">
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>描述</label>
+                            <textarea type="text" name="phone" rows="5" class="form-control" placeholder=""></textarea>
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>联系人</label>
+                            <input type="text" name="phone" class="form-control" placeholder="">
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>联系QQ</label>
+                            <input type="text" name="phone" class="form-control" placeholder="">
+                            <small class="form-text text-muted"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>是否显示</label>
+                            <input type="checkbox" name="phone" class="form-control" placeholder="">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="submit-box">
+            <button type="submit" class="btn btn-primary">确定提交</button>
+            <button type="button" onclick="window.location.blink()" class="btn btn-outline-secondary">取消</button>
         </div>
     </div>
-    <div class="layui-form-item">
-        <div class="layui-input-block">
-            <button class="layui-btn" lay-submit="" lay-filter="submit">立即提交</button>
-
-        </div>
-    </div>
-</form>
-
+</main>
 
 
         </div>
