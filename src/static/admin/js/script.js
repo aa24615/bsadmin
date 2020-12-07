@@ -5,15 +5,12 @@ $(document).ready(function() {
 
     $('.menu .top-menu').click(function () {
 
-        let sub = $(this).next();
-        let _this = $(this).find('.jt');
+        let pa = $(this).parent();
 
-        if(sub.hasClass('d-none')){
-            sub.removeClass('d-none');
-            _this.removeClass('an')
+        if(pa.hasClass('unwind')){
+            pa.removeClass('unwind');
         }else{
-            sub.addClass('d-none');
-            _this.addClass('an');
+            pa.addClass('unwind');
         }
 
 

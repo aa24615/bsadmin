@@ -29,7 +29,7 @@ var getMenu = function () {
         html  += '<i class="iconfont mr-1">'+topVal.icon+'</i>'
         html  += topVal.name
         if(topVal.list.length>0){
-            html  += '<i class="iconfont jt float-right">&#xe66c;</i>'
+            html  += '<i class="iconfont arrow float-right">&#xe66c;</i>'
         }
 
         html  += '</a>'
