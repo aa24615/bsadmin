@@ -104,11 +104,19 @@ nav .menu li .sub-menu li a {
 }
 nav .menu li .sub-menu li a:hover {
   background-color: rgba(0, 0, 0, 0.4);
+  border-left: 4px solid rgba(0, 0, 0, 0.4);
+}
+nav .menu li .sub-menu li a.active {
   border-left: 4px solid #007bff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+nav .menu li a.active {
+  border-left: 4px solid #007bff;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 nav .menu li a:hover {
   background-color: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid #007bff;
+  border-left: 4px solid rgba(0, 0, 0, 0.4);
 }
 header {
   position: absolute;

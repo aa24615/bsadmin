@@ -12,7 +12,7 @@ const setIndex = function () {
 
     fse.copySync('src/iframe/index.html','dist/'+pathName+'/index.html');
 
-    let menu = tools.getMenu(); //注入菜单
+    let menu = tools.getMenu('iframe'); //注入菜单
 
     let index = fs.readFileSync(path.join('dist/'+pathName+'/index.html'), 'utf8');
 

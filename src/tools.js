@@ -7,7 +7,7 @@ const fse = require('fs-extra');
 const config = require('./static/admin/js/config.js');
 
 
-var getMenu = function () {
+var getMenu = function (type='html') {
 
 
     let menu = config.menu;
@@ -21,7 +21,12 @@ var getMenu = function () {
 
 
         if(topVal.url.length>1){
-            html  += '<a href="'+ topVal.url +'" target="main">'
+            if(type=='html'){
+                html  += '<a href="'+ topVal.url +'">'
+            }else{
+                html  += '<a href="'+ topVal.url +'" target="main">'
+            }
+
         }else{
             html  += '<a class="top-menu" href="javascript:;">'
         }
@@ -38,7 +43,12 @@ var getMenu = function () {
             for( subVal of topVal.list){
 
                 html  += '<li>'
-                html  += '<a href="'+subVal.url+'" target="main">'+subVal.name+'</a>'
+                if(type=='html'){
+                    html  += '<a href="'+subVal.url+'" >'+subVal.name+'</a>'
+                }else{
+                    html  += '<a href="'+subVal.url+'" target="main">'+subVal.name+'</a>'
+                }
+
                 html  += '</li>'
 
             }
