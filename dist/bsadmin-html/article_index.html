@@ -16,6 +16,13 @@
     <script src="./static/js/jquery-3.3.1.min.js" ></script>
     <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
     <script src="./static/admin/js/script.js" ></script>
+    <script>
+        $(function () {
+            let hrefArr = window.location.href.split('/');
+            let name = hrefArr[hrefArr.length-1];
+            $(".menu a[href='"+name+"']").addClass('active');
+        })
+    </script>
 </head>
 <body>
 
