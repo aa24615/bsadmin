@@ -5,8 +5,8 @@
 轻量不复杂 简洁不简单
 
 ### git仓库
-- github: [https://github.com/aa24615/bsadmin](https://github.com/aa24615/qadmin)
-- gitee: [https://gitee.com/flash127/bsadmin](https://gitee.com/flash127/qadmin)
+- github: [https://github.com/aa24615/bsadmin](https://github.com/aa24615/bsadmin)
+- gitee: [https://gitee.com/flash127/bsadmin](https://gitee.com/flash127/bsadmin)
 
 ### zip下载
 - 官方下载: [http://www.qadmin.net/](http://www.qadmin.net/)
