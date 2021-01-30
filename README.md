@@ -63,4 +63,8 @@
 - 更多开源项目: [https://github.com/aa24615](https://github.com/aa24615)
 
 
+### License
+
+bsadmin is licensed under the license of MIT. See the [LICENSE](LICENSE) for more details.
+
 
