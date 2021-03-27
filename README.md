@@ -55,15 +55,33 @@
 - 演示: [http://www.qadmin.net/bsadmin/iframe/](http://www.qadmin.net/bsadmin/iframe/)
 
 
+
 ### 在架构中使用
 
-**thinkphp6示例**
-- github: [https://github.com/aa24615/qadmin-thinkphp6](https://github.com/aa24615/qadmin-thinkphp6)
-- gitosc: [https://gitee.com/flash127/qadmin-thinkphp6](https://gitee.com/flash127/qadmin-thinkphp6)
+> php
 
-**laravel8示例**
-- github: [https://github.com/aa24615/qadmin-laravel8](https://github.com/aa24615/qadmin-laravel8)
-- gitosc: [https://gitee.com/flash127/qadmin-laravel8](https://gitee.com/flash127/qadmin-laravel8)
+- thinkphp6示例
+
+    github: [https://github.com/aa24615/qadmin-thinkphp6](https://github.com/aa24615/qadmin-thinkphp6)
+    gitosc: [https://gitee.com/flash127/qadmin-thinkphp6](https://gitee.com/flash127/qadmin-thinkphp6)
+
+- laravel8示例
+
+    github: [https://github.com/aa24615/qadmin-laravel8](https://github.com/aa24615/qadmin-laravel8)
+    gitosc: [https://gitee.com/flash127/qadmin-laravel8](https://gitee.com/flash127/qadmin-laravel8)
+
+> java
+
+- spring示例
+
+    github: [https://github.com/aa24615/qadmin-spring-web-mvc](https://github.com/aa24615/qadmin-spring-web-mvc)    
+    gitosc: [https://gitee.com/flash127/qadmin-spring-web-mvc](https://gitee.com/flash127/qadmin-spring-web-mvc) 
+
+> go
+
+- beego示例
+
+    ...待完善
 
 
 
