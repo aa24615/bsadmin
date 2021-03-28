@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航管理 - BsAdmin后台模板 - iframe版演示</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+</head>
+
+<body>
+
+
+<main>
+    <div class="main">
+        <div class="search">
+            <form class="form-inline float-left" action="" method="get">
+                <div class="form-group">
+                    <input type="text" name="key" value="" class="form-control" placeholder="导航名称">
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="iconfont"></i>搜索</button>
+            </form>
+
+
+            <a class="btn btn-primary float-right" href="nav_create.html"><i class="iconfont"></i>新增</a>
+        </div>
+
+
+        <div class="table-box">
+            <table class="table">
+                <colgroup>
+                    <col width="80">
+                    <col width="150">
+                    <col width="90">
+                    <col width="90">
+                    <col width="90">
+                    <col>
+                    <col width="150">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>排序</th>
+                    <th>名称</th>
+                    <th>显示</th>
+                    <th>连接</th>
+                    <th>新窗</th>
+                    <th>地址</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="id9">
+                    <td>1</td>
+                    <td>首页</td>
+                    <td><input data-id="9" lay-filter="state" type="checkbox" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td><input data-id="9" lay-filter="url_state" type="checkbox" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td><input data-id="9" lay-filter="target" type="checkbox" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td>/xxx.html</td>
+                    <td><a href="/admin/nav/update/id/9.html">修改</a> | <a class="del" data-id=".id9" href="/admin/nav/del/id/9.html">删除</a></td>
+                </tr>
+                <tr class="id11">
+                    <td>1</td>
+                    <td>|---------文章</td>
+                    <td><input type="checkbox" data-id="11" lay-filter="state" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td><input type="checkbox" data-id="11" lay-filter="url_state" lay-text="开启|关闭" lay-skin="switch">
+                    </td>
+                    <td><input type="checkbox" data-id="11" lay-filter="target" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td>/xxx.html</td>
+                    <td><a href="/admin/nav/update/id/11.html">修改</a> | <a class="del" data-id=".id11" href="/admin/nav/del/id/11.html">删除</a></td>
+                </tr>
+                <tr class="id10">
+                    <td>1</td>
+                    <td>技术</td>
+                    <td><input data-id="10" lay-filter="state" type="checkbox" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td><input data-id="10" lay-filter="url_state" type="checkbox" checked="" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td><input data-id="10" lay-filter="target" type="checkbox" lay-text="开启|关闭" lay-skin="switch"></td>
+                    <td>/xxx.html</td>
+                    <td><a href="/admin/nav/update/id/10.html">修改</a> | <a class="del" data-id=".id10" href="/admin/nav/del/id/10.html">删除</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="./static/admin/js/update.js" ></script>
+</body>
+
+</html>

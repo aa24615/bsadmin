@@ -1,0 +1,262 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>备份数据库 - BsAdmin后台模板 - iframe版演示</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+</head>
+
+<body>
+
+
+<main>
+    <div class="main">
+        <div class="table-box">
+            <table class="table">
+                <colgroup>
+                    <col width="50">
+                    <col width="300">
+                    <col width="300">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                    <col width="100">
+                    <col width="300">
+                    <col width="150">
+                    <col width="100">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th><input lay-filter="all" type="checkbox" lay-skin="primary">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </th>
+                    <th>表名</th>
+                    <th>表说明</th>
+                    <th>引擎</th>
+                    <th>编码</th>
+                    <th>数据量</th>
+                    <th>数据大小</th>
+                    <th>创建时间</th>
+                    <th>备份状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="0" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_admin</td>
+                    <td>管理员表</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>0</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:08:49</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_admin&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="1" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_article</td>
+                    <td>文章表</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>9</td>
+                    <td>80KB</td>
+                    <td>2018-04-23 00:08:49</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_article&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="2" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_category</td>
+                    <td>文章栏目</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>15</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:08:49</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_category&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="3" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_flink</td>
+                    <td>友情链接</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>5</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:08:50</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_flink&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="4" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_info</td>
+                    <td>个人资料</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>19</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:08:51</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_info&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="5" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_keys</td>
+                    <td>TAG表</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>26</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:08:52</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_keys&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="6" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_leave</td>
+                    <td>留言表</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>60</td>
+                    <td>16KB</td>
+                    <td>2018-04-28 12:42:22</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_leave&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="7" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_menu</td>
+                    <td>后台菜单</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>51</td>
+                    <td>48KB</td>
+                    <td>2018-04-23 00:08:52</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_menu&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="8" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_nav</td>
+                    <td>前台导航</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>5</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:08:54</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_nav&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="9" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_region</td>
+                    <td>城市地区</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>3461</td>
+                    <td>336KB</td>
+                    <td>2018-04-23 00:08:54</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_region&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="10" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_skills</td>
+                    <td>专业技能</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>66</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:09:50</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_skills&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="11" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_user</td>
+                    <td>用户表</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>11</td>
+                    <td>16KB</td>
+                    <td>2018-04-28 12:44:59</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_user&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" lay-filter="vo" data-id="12" lay-skin="primary" value="false">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div>
+                    </td>
+                    <td>qadmin_work</td>
+                    <td>工作经历</td>
+                    <td>InnoDB</td>
+                    <td>utf8_general_ci</td>
+                    <td>3</td>
+                    <td>16KB</td>
+                    <td>2018-04-23 00:09:51</td>
+                    <td>未备份</td>
+                    <td><a href="/admin/mysql/backup.html?table=qadmin_work&amp;dir=20190401_2718">备份</a></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="99">
+                        <input type="checkbox" lay-filter="single" lay-skin="primary">
+                        &nbsp;所有表合并成一个文件
+                        <a href="javascript:" class="btn btn-primary" style="float: right;">自动备份</a>
+                        <a href="javascript:" class="btn btn-warning" style="float: right; margin-right: 20px;">一键备份</a>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+
+
+        </div>
+    </div>
+</main>
+
+
+
+
+<script src="./static/admin/js/update.js" ></script>
+</body>
+
+</html>
