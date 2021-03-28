@@ -18,11 +18,11 @@
     <script src="./static/admin/js/config.js" ></script>
     <script src="./static/admin/js/script.js" ></script>
     <script>
-$(function() {
-    const hrefArr = window.location.href.split('/');
-    const name = hrefArr[hrefArr.length-1];
-    $('.menu a[href=\''+name+'\']').addClass('active');
-});
+        $(function() {
+            const hrefArr = window.location.href.split('/');
+            const name = hrefArr[hrefArr.length-1];
+            $('.menu a[href=\''+name+'\']').addClass('active');
+        });
     </script>
 </head>
 <body>
@@ -56,6 +56,11 @@ $(function() {
                     <a class="dropdown-item" href="out.html">退出登录</a>
                 </div>
             </div>
+
+
+
+            <a class="float-right mr-2" href="http://www.qadmin.net" target="_blank">Qadmin官网</a>
+            <a  class="float-right mr-2" href="http://docs.qadmin.net/" target="_blank">开发文档</a>
 
         </header>
 
