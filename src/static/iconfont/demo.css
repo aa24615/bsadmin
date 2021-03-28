@@ -59,13 +59,13 @@
 }
 
 /* 页面布局 */
-.main {
-  padding: 30px 100px;
-  width: 960px;
+#body  .main {
+  padding: 30px;
   margin: 0 auto;
+  overflow: auto;
 }
 
-.main .logo {
+#body  .main .logo {
   color: #333;
   text-align: left;
   margin-bottom: 30px;
@@ -76,7 +76,7 @@
   *zoom: 1;
 }
 
-.main .logo a {
+#body  .main .logo a {
   font-size: 160px;
   color: #333;
 }

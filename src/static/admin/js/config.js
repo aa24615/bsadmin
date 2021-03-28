@@ -63,13 +63,36 @@ const menu = [{
             "name": "还原数据库",
             "url": "db_reduction.html"
         }]
-    }, {
+    },{
+        "name": "内置组件库",
+        "icon": "&#xe6ad;",
+        "url": "#",
+        "hidden": false,
+        "list": [{
+            "name": "图标库",
+            "url": "icon.html"
+        }],
+    },
+    {
+        "name": "第三方库/插件",
+        "icon": "&#xe6ad;",
+        "url": "#",
+        "hidden": false,
+        "list": [{
+            "name": "echarts图表",
+            "url": "echarts.html"
+        }, {
+            "name": "WebUploader上传",
+            "url": "webuploader.html"
+        }]
+    },
+    {
         "name": "退出登录",
         "icon": "&#xe68c;",
         "url": "out.html",
         "list": []
     }, {
-        "name": "开发者官网",
+        "name": "Qadmin官网",
         "icon": "&#xe690;",
         "url": "http://www.qadmin.net/",
         "target": "_blank",
@@ -86,7 +109,14 @@ const menu = [{
 const config = {
     name: "BsAdmin",
     menu: menu,
+    version: 'v1.1',
+    official:'http://www.qadmin.net'
 };
 
-module.exports.name = "BsAdmin";
-module.exports.menu = menu;
+try {
+    module.exports.name = "BsAdmin";
+    module.exports.menu = menu;
+}catch (e){
+
+}
+
