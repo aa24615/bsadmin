@@ -4,6 +4,10 @@
 
 轻量不复杂 简洁不简单
 
+![login.png](screenshot/login.png)
+
+![bsadmin.png](screenshot/bsadmin.png)
+
 ### git仓库
 - github: [https://github.com/aa24615/bsadmin](https://github.com/aa24615/bsadmin)
 - gitee: [https://gitee.com/flash127/bsadmin](https://gitee.com/flash127/bsadmin)
