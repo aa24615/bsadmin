@@ -2,7 +2,7 @@
 
 基于[Bootstrap4](https://v4.bootcss.com/)构建
 
-轻量不复杂 简洁不简单
+追求简单极致
 
 ![login.png](screenshot/login.png)
 
@@ -13,10 +13,7 @@
 - github: [https://github.com/aa24615/bsadmin](https://github.com/aa24615/bsadmin)
 - gitosc: [https://gitee.com/flash127/bsadmin](https://gitee.com/flash127/bsadmin)
 
-
-
 ### 目录结构
-
 
 
 ```

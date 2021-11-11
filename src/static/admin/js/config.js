@@ -109,7 +109,7 @@ const menu = [{
 const config = {
     name: "BsAdmin",
     menu: menu,
-    version: 'v1.1',
+    version: 'v1.2',
     official:'http://www.qadmin.net'
 };
 
