@@ -89,18 +89,12 @@ const menu = [{
     {
         "name": "退出登录",
         "icon": "&#xe68c;",
-        "url": "out.html",
+        "url": "#/out.html",
         "list": []
     }, {
         "name": "Qadmin官网",
         "icon": "&#xe690;",
         "url": "http://www.qadmin.net/",
-        "target": "_blank",
-        "list": []
-    }, {
-        "name": "开发文档",
-        "icon": "&#xe699;",
-        "url": "http://docs.qadmin.net/",
         "target": "_blank",
         "list": []
     }
@@ -109,7 +103,7 @@ const menu = [{
 const config = {
     name: "BsAdmin",
     menu: menu,
-    version: 'v1.2',
+    version: 'v1.3',
     official:'http://www.qadmin.net'
 };
 

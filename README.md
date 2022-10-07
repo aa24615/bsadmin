@@ -2,7 +2,7 @@
 
 基于[Bootstrap4](https://v4.bootcss.com/)构建
 
-追求简单极致
+追求简单极致,轻量简洁
 
 ![login.png](screenshot/login.png)
 
@@ -36,7 +36,7 @@
         │  └─ ...      
     ├─bsadmin-iframe              iframe版(文件与经典版一致)
   ├─src                           原代码(使用者不必理会)
-  ├─run.js                        nodejs脚本
+  ├─app.js                        nodejs脚本
 ```
 
 
@@ -89,7 +89,6 @@
 - beego示例
 
     ...待完善
-
 
 
 ### 参与贡献
